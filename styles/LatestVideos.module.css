@@ -1,0 +1,101 @@
+.container{
+    width: 100%;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.grid{
+    width: 80%;
+    padding: 2%;    
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    gap: 35px;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "vid1 vid2 vid3"
+    "vid4 vid5 vid6";
+}
+
+.gridItem{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;    
+}
+
+.gridItem iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid :nth-child(1){grid-area: vid1}
+.grid :nth-child(2){grid-area: vid2}
+.grid :nth-child(3){grid-area: vid3}
+.grid :nth-child(4){grid-area: vid4}
+.grid :nth-child(5){grid-area: vid5}
+.grid :nth-child(6){grid-area: vid6}
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  @media(max-width: 1280px){
+    .grid{       
+        align-items: center;
+        display: grid;
+        justify-items: center;
+        gap: 25px;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "vid1 vid2"
+        "vid3 vid4"
+        "vid5 vid6";
+    }
+  }
+
+  @media(max-width: 768px){
+    .container{
+        margin-top: 50px;
+    }
+    .grid{
+        margin-top: 35px;        
+        align-items: center;
+        display: grid;
+        justify-items: center;
+        gap: 25px;
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "vid1"
+        "vid2"
+        "vid3"
+        "vid4"
+        "vid5"
+        "vid6";
+    }
+  }

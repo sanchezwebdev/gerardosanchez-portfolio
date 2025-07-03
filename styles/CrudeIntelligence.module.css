@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.topContainer {
+  overflow: auto;
+}
+
+.imageContainer {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 600px;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.image {
+  width: 100%;
+}
+
+.imageLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
+.imageLinks a {
+  text-decoration: none;
+  color: #4361ee;
+  font-weight: bold;
+}
+
+.imageLinks span {
+  font-weight: bold;
+  color: black;
+}
+
+.featuresContainer {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.featuresContainer h2 {
+  margin-top: 50px;
+  font-size: 2.2rem;
+}
+
+.feature {
+  margin-top: 100px;
+}
+
+.featureTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  text-align: justify;
+}
+
+.feature .image {
+  max-width: 600px;
+}
+
+.feature:nth-of-type(1) .image {
+  float: left;
+  margin-right: 2rem;
+}
+
+.feature:nth-of-type(1) p {
+  margin-right: 2rem;
+}
+
+.feature:nth-of-type(2) .image {
+  float: right;
+  margin-left: 2rem;
+}
+
+.feature:nth-of-type(2) p {
+  margin-left: 2rem;
+}
+
+.feature:nth-of-type(3) .image {
+  float: left;
+  margin-right: 2rem;
+}
+
+.feature:nth-of-type(3) p {
+  margin-right: 2rem;
+}
+
+.devNotes {
+  margin-top: 100px;
+}
+
+.devNotes h2 {
+  font-size: 2rem;
+}
+
+@media(max-width: 768px){
+  .featuresContainer{
+    overflow: hidden;
+  }
+
+.feature {
+  margin-top: 50px;
+}
+
+  .imageContainer {
+  float: none;
+  margin: none;  
+  align-self: center;
+  justify-self: center;
+}
+  
+.feature:nth-of-type(1) .image {
+  float: none;
+  margin-right: none;  
+  justify-self: center;
+}
+
+.feature p {
+  margin-right: none;  
+}
+
+.feature:nth-of-type(2) .image, .feature:nth-of-type(2) p {
+  float: none;  
+  margin-left: 0px;  
+}
+
+.feature:nth-of-type(3) .image, .feature:nth-of-type(3) p {
+  float: none;  
+  margin-right: 0px;
+  
+}
+.feature .image {
+max-width: 100%
+}
+}
+@media(max-width: 500px){
+  .imageLinks {
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+}
