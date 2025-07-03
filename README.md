@@ -2,7 +2,7 @@
 
 Welcome to my personal web developer portfolio! This project showcases my full-stack development work, technical skills, and selected projects. The website is built using **Next.js**, **React**, and various modern web technologies to deliver a responsive, performant, and visually engaging experience.
 
-> ⚠️ **Disclaimer**: The GIFs shown on the live website are **not included in this repository**. This repo is primarily intended as a code demonstration and not meant to be cloned and run as a complete site. Some assets have been excluded to keep the repo lightweight and focused on code structure.
+> ⚠️ **Disclaimer**: The GIFs and images shown on the live website are **not included in this repository**. This repo is primarily intended as a code demonstration and not meant to be cloned and run as a complete site. Some assets have been excluded to keep the repo lightweight and focused on code structure.
 
 ## 🌟 Features
 
@@ -43,8 +43,6 @@ A full-stack web application exploring global oil industry trends using data ana
 - Data sourced and cleaned from Kaggle, then modeled and deployed via Supabase and Heroku.
 
 > **Tech stack**: Django, Plotly, PostgreSQL, Supabase, Heroku
-
-![Crude Intelligence Screenshot](public/project_images/pictures/pic_ci1.png)
 
 ---
 
