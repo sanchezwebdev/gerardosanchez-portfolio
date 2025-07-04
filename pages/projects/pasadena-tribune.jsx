@@ -1,6 +1,10 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/Tribune.module.css";
+import Image from 'next/image'
+
 export default function ProjectPage() {
+const src = "https://res.cloudinary.com/dyivstfjt/image/upload/v1751635366/pic_tpt1_i4zaiw.png";
+const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1,w_20/v1751635366/pic_tpt1_i4zaiw.png";
   return (
     <>
       <Layout>
@@ -8,7 +12,15 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>The Pasadena Tribune</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635366/pic_tpt1_i4zaiw.png" alt="" /></a>
+            <Image
+              className={styles.image}
+              src={src}
+              alt=""
+              width={1200}   
+              height={800}   
+              placeholder="blur"
+              blurDataURL={blurSrc}
+            />
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>

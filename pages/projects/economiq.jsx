@@ -1,6 +1,10 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/Economiq.module.css";
+import Image from 'next/image'
+
 export default function ProjectPage() {
+  const econImageSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/v1751635365/pic_ei3_trhuid.png";
+  const econImageBlurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1,w_20/v1751635365/pic_ei3_trhuid.png";
   return (
     <>
       <Layout>
@@ -55,7 +59,15 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Multi-Factor Economic and Market Analysis</h3>
-              <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635365/pic_ei3_trhuid.png" alt="" /></a>
+                <Image
+                  className={styles.image}
+                  src={econImageSrc}
+                  alt="EconomIQ Investment Signals Chart"
+                  width={1200}      
+                  height={800}
+                  placeholder="blur"
+                  blurDataURL={econImageBlurSrc}
+                />
               <p>EconomIQ enables deeper insights by allowing users to explore the relationships between multiple economic and market indicators side by side. On the Investment Signals page seen here on the right, users can select and compare two indicators—such as the USD/EUR exchange rate and gold prices—normalized on a shared timeline to reveal hidden correlations or divergences.<br /><br />
 
               In addition to individual metric comparisons, the stacked Investment Climate Index chart showcases how venture capital funding and corporate profits interact over time, providing a high-level gauge of overall economic sentiment. Together with the business health heatmap, these visualizations make it easy to track shifts in market confidence and economic health at a glance. This multi-dimensional approach empowers users to form more holistic, data-driven investment and business strategies.</p><br /><br />

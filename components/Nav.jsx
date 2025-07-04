@@ -3,6 +3,7 @@ import styles from '../styles/Nav.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 const Nav = () => {
   const router = useRouter()
@@ -28,6 +29,13 @@ const Nav = () => {
 
   return (
     <div className={containerClassNames}>
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/GS.png"
+        />
+      </Head>
       <Link href="/" className={styles.link}>
         <Image
           src="/GS.png"
