@@ -8,6 +8,13 @@ export default function ProjectPage() {
   const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1,w_20/v1751635361/pic_cp1_jxdcam.png";
   return (
     <>
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635361/pic_cp1_jxdcam.png"
+        />
+      </Head>
       <Layout>
       <div className={styles.container}>
         <div className = {styles.topContainer}>
