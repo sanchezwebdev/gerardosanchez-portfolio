@@ -27,8 +27,8 @@ export default function ProjectPage() {
           />
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://crudeintelligence.gerardosanchez.dev/" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/crude-intelligence" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>Crude Intelligence is a full-stack web application that explores complex trends in the global oil industry through data analytics and visualization. Built with Django, PostgreSQL, and Plotly, this project showcases the full lifecycle of data-driven development—from ingesting and structuring real-world data to designing interactive, user-friendly visual outputs.<br /><br />        

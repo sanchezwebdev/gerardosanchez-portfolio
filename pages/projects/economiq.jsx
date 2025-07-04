@@ -24,8 +24,8 @@ export default function ProjectPage() {
               </a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://economiq.gerardosanchez.dev/" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/economiq" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>EconomIQ is a Django-based application designed to provide an interactive and visual analysis of economic and market data, helping users explore trends and relationships across macroeconomic indicators and major stock indexes. It integrates dynamic charting with financial metrics to make complex data approachable and visually engaging.<br /><br /> 

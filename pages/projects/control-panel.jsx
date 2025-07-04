@@ -32,8 +32,8 @@ export default function ProjectPage() {
             />
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://controlpanel.gerardosanchez.dev" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/control-panel" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>The control panel for Knowledge of the West is a custom-built Next.js and React application designed to manage a comprehensive, Wikipedia-like knowledge base focused on Western cultural and intellectual history. It covers a wide range of topics including history, philosophy, science, music, and more. The application provides administrators with a streamlined interface to manage thousands of entries, each enriched with text, images, and audio files.<br /><br />

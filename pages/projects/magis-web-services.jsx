@@ -20,8 +20,8 @@ export default function ProjectPage() {
               </a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://magiswebservices.com" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/magis" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>This single-page application is a polished, modern website for Magis Web Services, a web development services provider. Built with HTML, CSS, and JavaScript on top of a premade template, it was heavily customized to emphasize design quality and user engagement. The site showcases services in responsive design, mobile-first layouts, content management, eCommerce, SEO, and maintenance. A dynamic portfolio section highlights various sample website styles, allowing potential clients to explore design options or envision fully custom builds. <br /><br />

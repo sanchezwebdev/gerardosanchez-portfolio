@@ -31,8 +31,8 @@ const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1
             />
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://thepasadenatribune.gerardosanchez.dev" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/pasadena-tribune" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>The Pasadena Tribune is an online newspaper application designed to emulate a modern, fully functional news platform. Built using Next.js and React, the site is hosted on Vercel with a MongoDB backend managed through MongoDB Atlas, and images are seamlessly integrated using Contentful as a headless CMS. <br /><br />

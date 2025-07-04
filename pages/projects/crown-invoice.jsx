@@ -20,8 +20,8 @@ export default function ProjectPage() {
               </a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
-              <a href="">Live Site</a>
-              <a href="">Github Codebase</a>
+              <a href="https://crowninvoice.gerardosanchez.dev" target="_blank">Live Site</a>
+              <a href="https://github.com/sanchezwebdev/crown-invoice" target="_blank">Github Codebase</a>
             </div>
           </div>
             <p>Crown Invoice is a sleek, user-friendly web application designed to make invoice creation quick and stress-free. The interface allows users to customize sender and recipient details, add as many line items as needed, set tax rates, and include personal notes — all in a single, intuitive form. The app automatically calculates subtotals, tax, and the final total in real time as you type.<br /><br />
