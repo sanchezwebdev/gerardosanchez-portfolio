@@ -60,8 +60,7 @@ const Development = () => {
               <li>Django</li>
               <li>Vercel</li>
               <li>Heroku</li>
-              <li>Contentful</li>              
-              <li>BCrypt</li>              
+              <li>Contentful</li>                                    
               <li>JWT</li>              
             </ul>
           </div>
