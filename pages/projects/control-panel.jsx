@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/ControlPanel.module.css";
 import Image from 'next/image'
+import Head from 'next/head';
 
 export default function ProjectPage() {
 

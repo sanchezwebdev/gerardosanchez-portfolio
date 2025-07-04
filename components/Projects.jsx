@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import style from '../styles/Projects.module.css';
+import Head from 'next/head';
 
 const Projects = () => {
   const projects = [
@@ -12,27 +13,39 @@ const Projects = () => {
     { id: 6, href: '/projects/crown-invoice', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639848/invoice_qscpps.avif', alt: 'Project 6', title: 'Crown Invoice' },
   ];
 
-  return (
-    <div className={style.container}>
-      <h1 className={style.title}>Projects</h1>
-      <div className={style.grid}>
-        {projects.map((project) => (
-            <div key={project.id} className={style.gridItem}>
-            <Link href={project.href}>
-                <div className={style.imageWrapper}>
-                <img
-                    src={project.src}
-                    alt={project.alt}
-                    className={style.image}
-                />
-                <div className={style.overlay}></div>
-                 <div className={style.overlayText}><h1>{project.title}</h1></div>
-                </div>
-            </Link>
-            </div>
+ return (
+    <>
+      <Head>
+        {projects.map(project => (
+          <link 
+            key={project.id}
+            rel="preload" 
+            as="image" 
+            href={project.src} 
+          />
         ))}
+      </Head>
+      <div className={style.container}>
+        <h1 className={style.title}>Projects</h1>
+        <div className={style.grid}>
+          {projects.map((project) => (
+              <div key={project.id} className={style.gridItem}>
+              <Link href={project.href}>
+                  <div className={style.imageWrapper}>
+                  <img
+                      src={project.src}
+                      alt={project.alt}
+                      className={style.image}
+                  />
+                  <div className={style.overlay}></div>
+                   <div className={style.overlayText}><h1>{project.title}</h1></div>
+                  </div>
+              </Link>
+              </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

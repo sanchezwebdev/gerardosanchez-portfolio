@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/Tribune.module.css";
 import Image from 'next/image'
+import Head from 'next/head';
 
 export default function ProjectPage() {
 const src = "https://res.cloudinary.com/dyivstfjt/image/upload/v1751635366/pic_tpt1_i4zaiw.png";
