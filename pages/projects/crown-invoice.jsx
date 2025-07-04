@@ -1,8 +1,14 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/Crown.module.css";
+import Head from 'next/head'
+
 export default function ProjectPage() {
   return (
     <>
+      <Head>
+        <title>Gerardo Sanchez - Crown Invoice</title>
+        <link rel="icon" href="/favicon.svg" />        
+      </Head> 
       <Layout>
       <div className={styles.container}>
         <div className = {styles.topContainer}>

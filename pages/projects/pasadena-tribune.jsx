@@ -9,6 +9,8 @@ const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1
   return (
     <>
       <Head>
+        <title>Gerardo Sanchez - The Pasadena Tribune</title>
+        <link rel="icon" href="/favicon.svg" />
         <link
           rel="preload"
           as="image"

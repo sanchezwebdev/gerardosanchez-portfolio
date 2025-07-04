@@ -9,8 +9,10 @@ export default function ProjectPage() {
   return (
     <>
       <Head>
+        <title>Gerardo Sanchez - Crude Intelligence</title>
+        <link rel="icon" href="/favicon.svg" />
         <link rel="preload" as="image" href="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635361/pic_ci1_tkuzwq.png" />
-      </Head>
+      </Head>           
       <Layout>
       <div className={styles.container}>
         <div className = {styles.topContainer}>

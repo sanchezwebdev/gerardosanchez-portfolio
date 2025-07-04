@@ -1,12 +1,17 @@
 import Layout from "../../components/Layout";
 import styles from "../../styles/Economiq.module.css";
 import Image from 'next/image'
+import Head from 'next/head';
 
 export default function ProjectPage() {
   const econImageSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/v1751635365/pic_ei3_trhuid.png";
   const econImageBlurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1,w_20/v1751635365/pic_ei3_trhuid.png";
   return (
     <>
+      <Head>
+        <title>Gerardo Sanchez - EconomIQ</title>
+        <link rel="icon" href="/favicon.svg" />        
+      </Head> 
       <Layout>
       <div className={styles.container}>
         <div className = {styles.topContainer}>
