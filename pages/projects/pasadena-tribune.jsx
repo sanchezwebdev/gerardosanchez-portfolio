@@ -8,7 +8,7 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>The Pasadena Tribune</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="/project_images/pictures/pic_tpt1.png" alt="" /></a>
+            <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635366/pic_tpt1_i4zaiw.png" alt="" /></a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>
@@ -32,7 +32,7 @@ export default function ProjectPage() {
             <h2>Key Features Include</h2><br />
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Dynamically Generated Articles</h3>
-              <a href=""><img className={styles.image} src="/project_images/pictures/pic_tpt2.png" alt="" /></a>
+              <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635365/pic_tpt2_jw8zmv.png" alt="" /></a>
               <p>Articles are dynamically generated using a combination of modern static site generation and dynamic routing. Each article lives at a clean, descriptive URL that includes its category and title, making the site intuitive and SEO-friendly.<br /><br />
 
               When the site is built, it automatically pulls in all article data and pre-generates a dedicated page for each piece. This ensures lightning-fast performance and a smooth browsing experience for users. Images for each article are fetched from a headless content management system (Contentful) and delivered in an optimized, responsive format to ensure they look great on all devices.<br /><br /></p>
@@ -40,7 +40,16 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Thematic News Categories</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/tpt5.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751637891/tpt5_yarypq.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>The Pasadena Tribune organizes its 140 articles into a set of clearly defined categories — such as Local News, California, Politics, Sports, Arts & Entertainment, and more — to make browsing feel like a true digital newspaper experience.<br /><br />
 
               When readers navigate to a specific category, they’re presented with a fully customized section that highlights the most relevant stories in a visually structured and engaging way. Each category page features a unique header image, a carefully curated mix of featured stories and supporting articles, and layouts designed to guide the reader’s attention, similar to a real print or major online publication.<br /><br />
@@ -53,7 +62,16 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Site-wide Search</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/tpt4.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751637989/tpt4_ktjevx.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>The application includes a site-wide search feature that allows visitors to quickly find articles by entering keywords, topics, or phrases. Rather than simply browsing through categories, readers can instantly access content that matches their interests — whether they’re looking for a specific headline, a topic mentioned in an article body, or even keywords within an article’s description or tags.<br /><br />
 
               The search experience is designed to feel smooth and immediate. When a user submits a query, the application filters through the full collection of articles and returns a list of relevant results in real time. Each result preview shows the article’s title, description, and a thumbnail image, making it easy to decide which story to read. Clicking on any result seamlessly navigates the user to that full article page.</p>

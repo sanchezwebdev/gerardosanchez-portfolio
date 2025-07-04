@@ -4,12 +4,12 @@ import style from '../styles/Projects.module.css';
 
 const Projects = () => {
   const projects = [
-    { id: 1, href: '/projects/crude-intelligence', src: '/grid_images/oil-rig.avif', alt: 'Project 1', title: 'Crude Intelligence'},
-    { id: 2, href: '/projects/economiq', src: '/grid_images/economy.jpg', alt: 'Project 2', title: 'EconomIQ Analytics' },
-    { id: 3, href: '/projects/pasadena-tribune', src: '/grid_images/news.jpg', alt: 'Project 3', title: 'Pasadena Tribune' },
-    { id: 4, href: '/projects/control-panel', src: '/grid_images/user.avif', alt: 'Project 4', title: 'Knowledge Base Control Panel' },
-    { id: 5, href: '/projects/magis-web-services', src: '/grid_images/web-services.avif', alt: 'Project 5', title: 'Magis Web Services' },
-    { id: 6, href: '/projects/crown-invoice', src: '/grid_images/invoice.avif', alt: 'Project 6', title: 'Crown Invoice' },
+    { id: 1, href: '/projects/crude-intelligence', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639850/oil-rig_jqhgfg.avif', alt: 'Project 1', title: 'Crude Intelligence'},
+    { id: 2, href: '/projects/economiq', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639849/economy_afaan6.jpg', alt: 'Project 2', title: 'EconomIQ Analytics' },
+    { id: 3, href: '/projects/pasadena-tribune', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639850/news_yspmxw.jpg', alt: 'Project 3', title: 'Pasadena Tribune' },
+    { id: 4, href: '/projects/control-panel', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639852/user_zbsfwc.avif', alt: 'Project 4', title: 'Knowledge Base Control Panel' },
+    { id: 5, href: '/projects/magis-web-services', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639853/web-services_uow1za.avif', alt: 'Project 5', title: 'Magis Web Services' },
+    { id: 6, href: '/projects/crown-invoice', src: 'https://res.cloudinary.com/dyivstfjt/image/upload/v1751639848/invoice_qscpps.avif', alt: 'Project 6', title: 'Crown Invoice' },
   ];
 
   return (

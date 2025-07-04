@@ -8,7 +8,16 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>Magis Web Services</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="/project_images/gifs/mws1.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751639195/mws1_vynskf.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>
@@ -24,7 +33,16 @@ export default function ProjectPage() {
             <h2>Key Features Include</h2><br />
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Interactive Showcase</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/mws3.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751639254/mws3_f8it2t.mkv"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>This single-page application highlights an immersive, modern approach to showcasing work while making it easy for visitors to engage. The interactive portfolio grid features visually striking sample websites, each opening in dynamic modals that give users an immediate, detailed look without leaving the page. <br /><br />
                 
               Throught the integrated EmailJS contact form, visitors can instantly reach out to the team. The form includes real-time validation and smooth success/error feedback, providing a polished, responsive experience that builds trust. Under the hood, JavaScript manages form data, ensures accessibility, and handles dynamic navbar behavior for an elegant, fluid browsing experience. Together, these features create a professional, conversion-focused section that not only inspires visitors but actively encourages them to start a conversation — all in one cohesive, user-friendly flow.</p>

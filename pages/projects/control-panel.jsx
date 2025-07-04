@@ -8,7 +8,7 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>Knowledge Base Control Panel</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="/project_images/pictures/pic_cp1.png" alt="" /></a>
+            <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635361/pic_cp1_jxdcam.png" alt="" /></a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>
@@ -32,7 +32,7 @@ export default function ProjectPage() {
             <h2>Key Features Include</h2><br />
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Rich Text Authoring</h3>          
-              <a href=""><img className={styles.image} src="/project_images/pictures/pic_cp3.png" alt="" /></a>
+              <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635362/pic_cp3_gexrw2.png" alt="" /></a>
               
             <p>The editor page is the most feature-rich part of the Knowledge of the West control panel. After running a search on the landing page, administrators can double-click an entry to open it in the editor. At the top, they see the entry title along with a toggle button to switch between editor mode (where content can be modified) and an HTML preview (showing exactly how the article will render on the live site). This immediate toggling helps authors maintain full awareness of how their edits will appear publicly, minimizing surprises or formatting mismatches.<br /><br />
             At the heart of this page is a powerful rich text editor (RTE) from richtexteditor.com, providing comprehensive formatting capabilities including text styling, headings, tables, images, embedded audio, and other media assets. Editors have the freedom to build highly customized layouts, integrate visuals, and craft complex, well-structured articles without any external tools. This robust toolset supports advanced features like nested lists, quotes, links, and direct HTML editing when necessary, giving contributors creative freedom and fine-grained control. The same RTE is also planned for the public-facing site, enabling community contributors and curators to write and edit with the exact same level of power and flexibility as administrators. This unified editing experience fosters consistency in article quality and layout across the entire knowledge base.<br /><br />
@@ -43,7 +43,16 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Dynamic Category Selector</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/cp1.gif" alt="" /></a>          
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751639113/cp1_yze8gc.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>  
               <p>The category selector is a critical tool that allows editors to assign articles to one or multiple paths within a complex hierarchical structure. It uses a self-referential table in the database to represent parent-child relationships, enabling a deeply nested tree of categories. When the editor page loads, a hook fetches the entire category tree and initializes paths based on any pre-assigned categories.<br /><br />
 
               The UI is designed as a dynamic breadcrumb-style navigator. As the user clicks through categories, their selections are tracked in a pathStack and selectedCategoryIds arrays. Each breadcrumb button represents a level in the path and allows the user to jump back up the tree by slicing the stack to the chosen point. “Clear Selection” resets the state entirely, providing an easy way to start over.<br /><br />
@@ -54,7 +63,7 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Category Management System</h3>
-              <a href=""><img className={styles.image} src="/project_images/pictures/pic_cp2.png" alt="" /></a>
+              <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635361/pic_cp2_a1j9gx.png" alt="" /></a>
               <p>The Knowledge of the West control panel includes a dedicated category manager, a powerful tool designed to maintain and organize the site's extensive taxonomy. This system supports a self-referential hierarchical structure, allowing administrators to build a deep and flexible category tree capable of capturing complex relationships across historical, philosophical, scientific, and cultural domains.<br /><br />
 
               At its core, the category manager interface allows the creation of both top-level categories and nested subcategories, with constraints to prevent trees from exceeding five levels deep, preserving manageability and intuitive navigation. Administrators can easily create new categories, assign parent-child relationships, and ensure unique names with built-in duplicate checks and minimum-length validations. All operations are accompanied by clear modal feedback messages, guiding users through successes or errors with informative prompts.<br /><br />

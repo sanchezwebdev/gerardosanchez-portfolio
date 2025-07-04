@@ -8,7 +8,7 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>Crude Intelligence</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="/project_images/pictures/pic_ci1.png" alt="" /></a>
+            <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635361/pic_ci1_tkuzwq.png" alt="" /></a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>
@@ -34,14 +34,32 @@ export default function ProjectPage() {
             <h2>Key Features Include</h2><br />
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Interactive Charts</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/ci2.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751638116/ci2_c1mp4c.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>Every chart in this application is interactive. In some cases, this interactivity consists of tooltips that appear on hover to provide additional context. In other cases, users can customize what information is displayed directly on the chart. <br /><br />
 
               For example, the choropleth map on the left visualizes pipeline spills using shades of red, where darker tones represent higher values. By default, it displays incidents per 1,000 miles of pipeline per state. Users can choose from alternative metrics, such as total spillage or spills by cause. When "spills by cause" is selected, an additional dropdown appears, allowing users to further refine the data by selecting a specific cause. In each scenario, the map dynamically updates its color scale to reflect the chosen metric, providing a flexible and informative visualization experience.</p>
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Interactive Analysis</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/ci3.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751638199/ci3_fk5xrd.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>The application includes several interactive analysis tools that allow users to explore and understand data in a flexible, user-driven way. The Spills Cost Analysis page shown on the right offers an interactive, data-driven breakdown of pipeline spill costs across multiple dimensions. At the top, users can choose which cost categories to include in the total calculation, such as property damage, emergency response, or environmental remediation. The total cost dynamically updates in real time based on these selections.
 
               Below, a comprehensive set of filters allows users to refine the dataset by year, pipeline type, liquid type, location, state, and cause. As selections change, the table and total cost instantly reflect the filtered data.<br /><br />
@@ -50,7 +68,16 @@ export default function ProjectPage() {
             </div>
             <div className={styles.feature}>
               <h3 className={styles.featureTitle}>Downloadable Charts</h3>
-              <a href=""><img className={styles.image} src="/project_images/gifs/ci1.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751638259/ci1_vunehp.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
               <p>The application supports downloadable charts throughout various data visualizations, allowing users to easily save insights for further analysis or presentations. This feature is powered by Plotly’s built-in export functionality, enabling seamless downloads without any additional setup. <br /><br />
               
               The crude oil price chart shown on the left visualizes historical price data for WTI, Brent, and Crude oil benchmarks. This interactive line and area chart allows users to explore trends over time, with options to hover for detailed tooltips and highlight specific data points.

@@ -8,7 +8,16 @@ export default function ProjectPage() {
         <div className = {styles.topContainer}>
           <h1>Crown Invoice</h1>
           <div className={styles.imageContainer}>
-            <a href=""><img className={styles.image} src="/project_images/gifs/crown1.gif" alt="" /></a>
+              <a href="">
+                <video
+                  className={styles.image}
+                  src="https://res.cloudinary.com/dyivstfjt/video/upload/v1751639562/crown1_abqwle.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </a>
             <div className={styles.imageLinks}>
               <span>Links:</span>
               <a href="">Live Site</a>
