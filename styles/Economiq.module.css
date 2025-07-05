@@ -77,6 +77,10 @@
   margin-bottom: 20px;
 }
 
+.featuresContainer .feature:nth-of-type(1) .featureTitle{
+  justify-self: right;
+}
+
 .feature p {
   text-align: justify;
 }
@@ -153,6 +157,9 @@
   .feature p {
     margin: 0px;
   }
+  .featuresContainer .feature:nth-of-type(1) .featureTitle{
+  justify-self: left;
+}
 }
 
 @media(max-width: 500px){

@@ -52,16 +52,16 @@ const Development = () => {
             <ul className={style.list}>
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>Django</li>
               <li>.NET</li>
               <li>MySQL</li>
               <li>SQL Server</li>
               <li>PostgreSQL</li>              
               <li>MongoDB</li>
-              <li>Django</li>
+              <li>JWT</li>              
+              <li>Contentful</li>                                    
               <li>Vercel</li>
               <li>Heroku</li>
-              <li>Contentful</li>                                    
-              <li>JWT</li>              
             </ul>
           </div>
         </div>
@@ -75,6 +75,7 @@ const Development = () => {
                 <ul className={style.list}>
                 <li>Exploratory Data Analysis (EDA)</li>
                 <li>Extract, Transform, Load (ETL)</li>
+                <li>Data Modeling</li>
                 <li>Data Visualization</li>
                 <li>Data Cleaning</li>
 
