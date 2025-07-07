@@ -42,7 +42,7 @@ export default function ProjectPage() {
 
             All data is stored in a MySQL database hosted on a Windows VPS, with many of the underlying tables modeled after WordPress’s backend structure for familiarity and extensibility. Media assets such as images and audio are uploaded, updated, and deleted through dedicated Express.js CRUD API routes running on the VPS. This setup ensures efficient and secure media handling, separate from the main application layer.<br /><br />
 
-            The public-facing site, hosted on Vercel, allows users to search for entries by title and filter results by author, category, and historical period, making the massive content library easily navigable. Access to the control panel and certain protected parts of the site is secured using JWT (JSON Web Tokens) and bcrypt, providing robust authentication and password hashing.<br /><br />
+            The public-facing site, hosted on Vercel, allows users to search for entries by title and filter results by author, category, and historical period, making the massive content library easily navigable. Access to the control panel is secured using JWT (JSON Web Tokens) and bcrypt, providing robust authentication and password hashing.<br /><br />
 
             Overall, the system combines modern frontend frameworks with a scalable and secure backend architecture. It balances user-friendly content management for administrators with powerful search and filtering tools for visitors, all while maintaining strong security practices and efficient media handling.<br /><br />
           
@@ -91,11 +91,10 @@ export default function ProjectPage() {
 
               At its core, the category manager interface allows the creation of both top-level categories and nested subcategories, with constraints to prevent trees from exceeding five levels deep, preserving manageability and intuitive navigation. Administrators can easily create new categories, assign parent-child relationships, and ensure unique names with built-in duplicate checks and minimum-length validations. All operations are accompanied by clear modal feedback messages, guiding users through successes or errors with informative prompts.<br /><br />
 
-              The backend logic employs a recursive deletion mechanism that ensures when a parent category is deleted, all of its descendant categories are also removed in a single, thorough sweep, preventing orphaned records and maintaining database integrity. The system leverages MySQL, supporting GET, POST, PUT, and DELETE operations. Each action dynamically refreshes the category list after a short delay, giving administrators up-to-date views without manual reloads.<br /><br />
+              The backend logic employs a recursive deletion mechanism that ensures when a parent category is deleted, all of its descendant categories are also removed in a single, thorough sweep, preventing orphaned records and maintaining database integrity. The system leverages MySQL, supporting CRUD operations. Each action dynamically refreshes the category list after a short delay, giving administrators up-to-date views without manual reloads.<br /><br />
 
-              Beyond creation and deletion, the editor allows renaming categories with instant feedback and seamless integration into the database. Administrators can search through categories via select inputs and update names efficiently. The combination of cookie-based JWT authentication and server-side verification ensures that only authorized users can access these critical taxonomy tools.<br /><br />
-
-              Altogether, this category manager empowers editors to define precise category paths, enforce structural rules, and maintain the evolving organizational backbone of the knowledge base. It provides the foundation for robust content discovery and supports the flexible cross-tagging logic used throughout Knowledge of the West, bridging editorial freedom with structural coherence </p>
+              Beyond creation and deletion, the editor allows renaming categories with instant feedback and seamless integration into the database. Administrators can search through categories via select inputs and update names efficiently.<br /><br />
+              </p>
             </div>
           </div>
       

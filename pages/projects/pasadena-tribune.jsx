@@ -57,7 +57,7 @@ const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1
               <a href=""><img className={styles.image} src="https://res.cloudinary.com/dyivstfjt/image/upload/v1751635365/pic_tpt2_jw8zmv.png" alt="" /></a>
               <p>Articles are dynamically generated using a combination of modern static site generation and dynamic routing. Each article lives at a clean, descriptive URL that includes its category and title, making the site intuitive and SEO-friendly.<br /><br />
 
-              When the site is built, it automatically pulls in all article data and pre-generates a dedicated page for each piece. This ensures lightning-fast performance and a smooth browsing experience for users. Images for each article are fetched from a headless content management system (Contentful) and delivered in an optimized, responsive format to ensure they look great on all devices.<br /><br /></p>
+              When the site is built, it automatically pulls in all article data and pre-generates a dedicated page for each piece. This ensures fast performance and a smooth browsing experience for users. Images for each article are fetched from a headless content management system (Contentful) and delivered in an optimized, responsive format to ensure they look great on all devices.<br /><br /></p>
 
             </div>
             <div className={styles.feature}>
@@ -76,7 +76,7 @@ const blurSrc = "https://res.cloudinary.com/dyivstfjt/image/upload/e_blur:50,q_1
 
               When readers navigate to a specific category, they’re presented with a fully customized section that highlights the most relevant stories in a visually structured and engaging way. Each category page features a unique header image, a carefully curated mix of featured stories and supporting articles, and layouts designed to guide the reader’s attention, similar to a real print or major online publication.<br /><br />
 
-              Articles within a category are intelligently positioned using a system of prioritized slots (such as main featured cards and supporting secondary cards). This lets each category feel dynamic and editorially designed rather than simply a plain list of posts.<br /><br />
+              Articles within a category are strategically positioned using a system of prioritized slots (such as main featured cards and supporting secondary cards). This lets each category feel dynamic and editorially designed rather than simply a plain list of posts.<br /><br />
 
               The system also makes use of Contentful to pull in high-quality images for both header visuals and individual article thumbnails, contributing to a more immersive, magazine-style look.<br /><br />
 

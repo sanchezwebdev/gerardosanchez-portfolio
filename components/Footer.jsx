@@ -14,7 +14,7 @@ const Footer = () => {
             <div className={style.icons}>
             <a href="https://www.linkedin.com/in/sanchezwebdev/" target="_blank" rel="noopener noreferrer" className={style.link}>
                 <RiLinkedinLine className={style.icon} /></a>
-            <a href="mailto:youremail@example.com" className={style.link}>
+            <a href="mailto:contact@gerardosanchez.dev" className={style.link}>
                 <MdOutlineEmail className={style.icon} />
             </a>
             <a href="https://www.youtube.com/@Gerardo_Sanchez01/videos" target="_blank" rel="noopener noreferrer" className={style.link}>

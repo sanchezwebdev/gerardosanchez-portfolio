@@ -38,10 +38,11 @@ export default function ProjectPage() {
             The app includes tools for analyzing economic composition over time, assessing currency and commodity trends, evaluating investment climate indices, and performing detailed stock market analyses with overlays like moving averages and regression trends. By combining normalized visualizations, comparative overlays, and aggregated data views, the application empowers analysts and investors to better understand market dynamics and economic health in an intuitive, web-based interface.<br /><br />
 
             EconomIQ utilizes OpenAI-generated synthetic data that closely mimics real-world economic behavior. This approach ensures that the app remains realistic and insightful while avoiding licensing and freshness limitations common in publicly available datasets.<br /><br />
+
+            The application is deployed on Heroku. The database is a PostgreSQL instance consisting of about a dozen tables with data acquired from Kaggle or generated with OpenAI.<br /><br />
           
           <strong>Tech Stack: </strong> Django, Matplotlib, PostgreSQL, Supabase, Heroku 
-            
-            </p>
+          <br /><br /></p>
 
         </div>
           <div className={styles.featuresContainer}>
@@ -58,7 +59,7 @@ export default function ProjectPage() {
                   playsInline
                 />
               </a>
-              <p>Many charts in this application are designed to be interactive, giving users a more insightful and hands-on exploration of market data. In this case, the Market Analysis chart on the left is a dynamic candlestick chart that updates in real time based on user selections. <br /><br />
+              <p>Many charts in this application are designed to be interactive, giving users a more insightful and hands-on exploration of market data. The Market Analysis chart on the left, for example, is a dynamic candlestick chart that updates in real time based on user selections. <br /><br />
 
               By default, the chart displays monthly OHLC (Open, High, Low, Close) data along with trading volume for the selected stock index, such as the Dow Jones, S&P 500, or Nasdaq. Users can switch between different indexes using the dropdown, and the chart will seamlessly refresh to show the corresponding data. Additionally, users can apply various technical analysis overlays — including linear regression, simple moving average (SMA), exponential moving average (EMA), and volume-weighted average price (VWAP) — to gain further context on price trends and momentum. This flexible interactivity supports a richer analysis experience for users interested in exploring different technical perspectives.</p>
             </div>
@@ -92,7 +93,7 @@ export default function ProjectPage() {
         <div className={styles.devNotes}>
           <h2>Development Notes</h2><br />
 
-          <p>During development, one of the key technical goals was to create a highly interactive experience that could handle complex economic and market data while remaining user-friendly. The application makes extensive use of Django’s ORM and raw SQL for efficient data querying and aggregation, paired with pandas for powerful data manipulation and cleaning. Matplotlib is leveraged for generating visually compelling, customized charts such as stacked bar plots, heatmaps, and advanced candlestick charts with technical overlays like linear regression, SMA, EMA, and VWAP.<br /><br />
+          <p>During development, one of the key technical goals was to create a highly interactive experience that could handle complex economic and market data while remaining user-friendly. The application makes extensive use of Django’s ORM and raw SQL for efficient data querying and aggregation, paired with pandas for data manipulation and cleaning. Matplotlib is leveraged for generating visually compelling, customized charts such as stacked bar plots, heatmaps, and advanced candlestick charts with technical overlays like linear regression, SMA, EMA, and VWAP.<br /><br />
 
           A significant challenge in building this app was sourcing comprehensive, up-to-date macroeconomic and financial datasets. Many public datasets on platforms like Kaggle were either outdated, incomplete, or locked behind licensing restrictions. To overcome this, I used OpenAI-generated synthetic datasets designed to closely mimic real-world economic trends and relationships. This approach allowed the app to simulate realistic historical patterns and market dynamics without depending on proprietary or stale data, enabling robust testing and more lifelike visualizations.<br /><br />
 

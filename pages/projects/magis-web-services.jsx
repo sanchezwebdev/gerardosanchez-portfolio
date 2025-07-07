@@ -58,7 +58,7 @@ export default function ProjectPage() {
         <div className={styles.devNotes}>
           <h2>Development Notes</h2><br />
 
-          <p>Building this application came with its share of tricky but rewarding challenges. One of the biggest priorities was making sure the navigation felt smooth and intuitive, which meant setting up a dynamic navbar that reacts to scrolling and highlights the current section — small touches that make a big difference to the overall feel. <br /><br />
+          <p>Building this application came with its share of tricky but rewarding challenges. One of the biggest priorities was making sure the navigation felt smooth and intuitive, which meant setting up a dynamic navbar that reacts to scrolling and highlights the current section. <br /><br />
             
           The portfolio grid and modal system needed careful handling to keep the experience seamless and avoid page jumps or awkward refreshes when users explore project samples. On the technical side, the contact form required custom validation to guide users clearly while connecting securely to EmailJS for instant email notifications. Balancing performance with visual appeal — like the background video and animations — was also key to keeping the site fast and engaging across all devices.</p>
         </div>
